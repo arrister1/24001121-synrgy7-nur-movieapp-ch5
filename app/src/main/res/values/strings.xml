@@ -24,4 +24,6 @@
     <string name="home">Home</string>
     <string name="dummy_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet nec ullamcorper sit amet risus nullam eget. Faucibus interdum posuere lorem ipsum dolor sit. Euismod quis viverra nibh cras pulvinar mattis. Tincidunt eget nullam non nisi est sit amet facilisis magna. Pulvinar pellentesque habitant morbi tristique senectus et. Quis imperdiet massa tincidunt nunc pulvinar sapien et. Ipsum nunc aliquet bibendum enim facilisis. Semper risus in hendrerit gravida rutrum quisque. Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Gravida arcu ac tortor dignissim convallis aenean et.</string>
     <string name="popular_movies">Discover Popular Movies</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
