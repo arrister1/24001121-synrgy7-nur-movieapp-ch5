@@ -23,6 +23,7 @@ class DataStore (val context: Context) {
         private val EXTRA_DOB = stringPreferencesKey("dob")
         private val EXTRA_FULL_NAME = stringPreferencesKey("fullName")
         private val EXTRA_ADDRESS = stringPreferencesKey("address")
+        private val IMAGE_URI = stringPreferencesKey("image_uri")
     }
 
     val username: Flow<String?> = context.dataStore.data.map { preferences ->
@@ -52,6 +53,10 @@ class DataStore (val context: Context) {
     val dob: Flow<String?> =  context.dataStore.data.map { preferences ->
         preferences[EXTRA_DOB]
     }
+
+    val profileImageUri: Flow<String?> = context.dataStore.data.map { preferences ->
+        preferences[IMAGE_URI]
+    }
     suspend fun saveUserData(username: String, email: String, pass: String){
         context.dataStore.edit { preferences ->
             preferences[EXTRA_USERNAME] = username
@@ -79,12 +84,13 @@ class DataStore (val context: Context) {
         }
     }
 
-    suspend fun updateUserData(username: String, fullName: String, address: String, dob: String) {
+    suspend fun updateUserData(username: String, fullName: String, address: String, dob: String, imageUri: String) {
         context.dataStore.edit{preferences ->
             preferences[EXTRA_USERNAME] = username
             preferences[EXTRA_FULL_NAME] = fullName
             preferences[EXTRA_ADDRESS] = address
             preferences[EXTRA_DOB] = dob
+            preferences[IMAGE_URI] = imageUri
         }
     }
 

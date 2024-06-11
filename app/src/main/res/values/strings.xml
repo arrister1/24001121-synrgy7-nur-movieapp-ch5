@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MovieApp</string>
+    <string name="app_name">MovieApp2</string>
     <string name="login">Login</string>
     <string name="enter_your_account_information">Enter your account information</string>
     <string name="enter_email">Enter email</string>
